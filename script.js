@@ -105,10 +105,9 @@ function mostrarPergunta() {
 
 function verificarResposta(respostaSelecionada) {
   const pergunta = perguntas[perguntaAtual];
-  if (respostaSelecionada === pergunta.correta) {
+  if (Number(respostaSelecionada) === pergunta.correta) {
     acertos++;
   }
-
   perguntaAtual++;
   mostrarPergunta();
 }
