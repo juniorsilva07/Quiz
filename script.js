@@ -119,8 +119,8 @@ function mostrarResultado() {
   const total = perguntas.length;
   const erros = total - acertos;
 
-  const porcentagemAcertos = ((acertos / total) * 100).toFixed(1);
-  const porcentagemErros = (100 - porcentagemAcertos).toFixed(1);
+const porcentagemAcertos = Number(((acertos / total) * 100).toFixed(1));
+const porcentagemErros = Number((100 - porcentagemAcertos).toFixed(1));
 
   pontuacaoP.textContent = `Você acertou ${acertos} de ${total} questões. 
   (${porcentagemAcertos}% de acertos e ${porcentagemErros}% de erros)`;
